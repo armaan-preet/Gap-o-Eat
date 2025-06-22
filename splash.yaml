@@ -1,0 +1,18 @@
+flutter_native_splash:
+  color: "#FFFFFF"
+  color_dark: "#000000"
+  image: assets\logo\dark_mode_logo.jpg
+  image_dark: assets\logo\light_mode_logo.jpg
+  fullscreen: true
+  android_gravity: center
+
+  android_12:
+    color: "#FFFFFF"
+    color_dark: "#000000"
+    image: assets\logo\light_mode_logo.jpg
+    image_dark: assets\logo\dark_mode_logo.jpg
+    fullscreen: true                  # <-- important
+    
+
+  web: false
+

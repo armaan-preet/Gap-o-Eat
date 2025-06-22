@@ -1,0 +1,1 @@
+ndk.dir=C:\\Users\\armaa\\Downloads\\android-ndk-r27c-windows\\android-ndk-r27c
