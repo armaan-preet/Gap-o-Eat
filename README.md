@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ecommerce
 
 A new Flutter project.
@@ -14,3 +15,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# Gap-o-Eat
+>>>>>>> 41027a76035aafd47a115848cda9b5f4a416c9bc
