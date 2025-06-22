@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ecommerce
 
 A new Flutter project.
@@ -18,3 +19,8 @@ samples, guidance on mobile development, and a full API reference.
 =======
 # Gap-o-Eat
 >>>>>>> 41027a76035aafd47a115848cda9b5f4a416c9bc
+=======
+# Gap-o-Eat
+
+A smart QR-based ordering and tracking system for local food vendors.
+>>>>>>> 4c65945a4445a4b0ebb93dc10a43e0cc2aae533a
