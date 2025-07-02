@@ -1,17 +1,18 @@
 name: gap_o_eat
 description: "A new Flutter project."
 
-publish_to: 'none' 
+publish_to: "none"
 
 version: 1.0.0+1
 
 environment:
   sdk: ^3.8.1
 
-# PACKAGES
+# ------------------ DEPENDENCIES ------------------
 dependencies:
   flutter:
     sdk: flutter
+
   cupertino_icons: ^1.0.8
   get: ^4.6.6
   lottie: ^3.3.1
@@ -31,36 +32,35 @@ dependencies:
   flutter_stripe: ^11.5.0
   flutter_native_splash: ^2.4.6
 
-#END
+# ------------------ DEV DEPENDENCIES ------------------
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
   flutter_lints: ^5.0.0
 
+# ------------------ FLUTTER CONFIGURATION ------------------
 flutter:
   uses-material-design: true
 
-# --------ASSETS----------------
-assets:
-  - assets/logo/
-  - assets/images/
+  assets:
+    - assets/logo/
+    - assets/images/
 
-#------------FONTS------------
-fonts:
-  - family: Nunito
-    fonts:
-      - asset: assets/fonts/Nunito-Light.ttf
-        weight: 300
-      - asset: assets/fonts/Nunito-Regular.ttf
-        weight: 400
-      - asset: assets/fonts/Nunito-Italic.ttf
-        style: italic
-      - asset: assets/fonts/Nunito-Medium.ttf
-        weight: 500
-      - asset: assets/fonts/Nunito-MediumItalic.ttf
-        weight: 500
-        style: italic
-      - asset: assets/fonts/Nunito-SemiBold.ttf
-        weight: 600
-      - asset: assets/fonts/Nunito-Bold.ttf
-        weight: 800
+  fonts:
+    - family: Nunito
+      fonts:
+        - asset: assets/fonts/Nunito-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Nunito-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Nunito-Italic.ttf
+          style: italic
+        - asset: assets/fonts/Nunito-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Nunito-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/Nunito-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Nunito-Bold.ttf
