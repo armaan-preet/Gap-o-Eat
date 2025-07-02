@@ -1,5 +1,6 @@
 // ignore_for_file: camel_case_types
 
+import 'package:gap_o_eat/common/widgets/buttons/elevated_button.dart';
 import 'package:gap_o_eat/features/authentication/screens/sign_up/widgets/privacy_policy.dart';
 import 'package:gap_o_eat/utils/constants/sizes.dart';
 import 'package:gap_o_eat/utils/constants/texts.dart';

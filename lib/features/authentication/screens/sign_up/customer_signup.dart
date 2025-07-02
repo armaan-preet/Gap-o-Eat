@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap_o_eat/common/style/padding.dart';
+import 'package:gap_o_eat/common/widgets/buttons/login_signup/form_divider.dart';
+import 'package:gap_o_eat/common/widgets/buttons/social_buttons.dart';
 import 'package:gap_o_eat/features/authentication/screens/sign_up/widgets/sign_up.dart';
 import 'package:gap_o_eat/utils/constants/sizes.dart';
 import 'package:gap_o_eat/utils/constants/texts.dart';
@@ -26,11 +28,11 @@ class CustomerSignup extends StatelessWidget {
              ///-----FORM
              sign_up(),
              ///---DIVIDER
-             UFormDivider(title: UTexts.orSignInWith ),
+             UformDivider(title: UTexts.orSignInWith,  ),
              SizedBox(height: USizes.spaceBtwSections),
 
              ///---footer
-             USocialButtons()
+             UsocialButtons()
 
            ],
         ),

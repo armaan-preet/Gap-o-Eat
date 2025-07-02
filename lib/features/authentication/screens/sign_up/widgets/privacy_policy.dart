@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap_o_eat/utils/constants/colors.dart';
 import 'package:gap_o_eat/utils/constants/texts.dart';
+import 'package:gap_o_eat/utils/helpers/helper_function.dart';
 
 // ignore: camel_case_types
 class Uprivacy_policy_checkbox extends StatelessWidget {
