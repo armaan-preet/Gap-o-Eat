@@ -1,8 +1,9 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:gap_o_eat/features/customer/qr/qr_display_screen.dart';
 import 'package:gap_o_eat/utils/constants/texts.dart';
-// ignore: depend_on_referenced_packages
 import 'package:iconsax/iconsax.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 
@@ -52,23 +53,33 @@ class _QrScanningScreenState extends State<QrScanningScreen> {
                 /// Close Button
                 Container(
                   decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(0.5),
+                   color: Colors.black.withValues(alpha: 0.5),
                     shape: BoxShape.circle,
                   ),
                   child: IconButton(
-                    icon: const Icon(Iconsax.close_circle, color: Colors.white, size: 30),
+                    icon: const Icon(
+                      Iconsax.close_circle,
+                      color: Colors.white,
+                      size: 30,
+                    ),
                     onPressed: () => Navigator.pushReplacement(
                       context,
-                      MaterialPageRoute(builder: (context) => const QrDisplayScreen()),
+                      MaterialPageRoute(
+                        builder: (context) => const QrDisplayScreen(),
+                      ),
                     ),
                   ),
                 ),
 
                 /// Brightness Control
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 12,
+                    vertical: 8,
+                  ),
                   decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(0.7),
+                   color: Colors.black.withValues(alpha: 0.5),
+
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Row(
@@ -105,11 +116,17 @@ class _QrScanningScreenState extends State<QrScanningScreen> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const SizedBox(height: 350), // Position below the scanning area
+                  const SizedBox(
+                    height: 350,
+                  ), // Position below the scanning area
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 20,
+                      vertical: 12,
+                    ),
                     decoration: BoxDecoration(
-                      color: Colors.black.withOpacity(0.7),
+                      color: Colors.black.withValues(alpha: 0.5),
+
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Text(
@@ -185,9 +202,11 @@ class _QrScanningScreenState extends State<QrScanningScreen> {
   }) {
     return Container(
       decoration: BoxDecoration(
-        color: isActive ? Colors.white : Colors.black.withOpacity(0.5),
+       color: isActive ? Colors.white : Colors.black.withValues(alpha: 0.5),
+
         shape: BoxShape.circle,
-        border: Border.all(color: Colors.white.withOpacity(0.3), width: 2),
+       border: Border.all(color: Colors.white.withValues(alpha: 0.3), width: 2),
+
       ),
       child: IconButton(
         icon: Icon(
@@ -207,10 +226,10 @@ class _QrScanningScreenState extends State<QrScanningScreen> {
         setState(() {
           isQrDetected = true;
         });
-        
+
         // Haptic feedback for successful scan
         HapticFeedback.heavyImpact();
-        
+
         controller.pauseCamera();
         _showScanResultDialog(scanData.code!);
       }
@@ -276,7 +295,9 @@ class _QrScanningScreenState extends State<QrScanningScreen> {
                 Navigator.of(context).pop();
                 Navigator.pushReplacement(
                   context,
-                  MaterialPageRoute(builder: (context) => const QrDisplayScreen()),
+                  MaterialPageRoute(
+                    builder: (context) => const QrDisplayScreen(),
+                  ),
                 );
                 // Process the scanned data here - navigate to menu or next screen
               },
@@ -322,7 +343,8 @@ class _QrScanningScreenState extends State<QrScanningScreen> {
                   leading: Container(
                     padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
-                      color: Colors.blue.withOpacity(0.1),
+                     color: Colors.blue.withValues(alpha: 0.1),
+
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: const Icon(Iconsax.camera, color: Colors.blue),
@@ -339,7 +361,8 @@ class _QrScanningScreenState extends State<QrScanningScreen> {
                   leading: Container(
                     padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
-                      color: Colors.green.withOpacity(0.1),
+                     color: Colors.green.withValues(alpha: 0.1),
+
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: const Icon(Iconsax.gallery, color: Colors.green),
@@ -382,9 +405,7 @@ class _QrScanningScreenState extends State<QrScanningScreen> {
     controller?.dispose();
     // Reset system UI when leaving the screen
     SystemChrome.setSystemUIOverlayStyle(
-      const SystemUiOverlayStyle(
-        statusBarBrightness: Brightness.light,
-      ),
+      const SystemUiOverlayStyle(statusBarBrightness: Brightness.light),
     );
     super.dispose();
   }

@@ -1,17 +1,21 @@
+
+
 import 'package:flutter/material.dart';
 import 'package:gap_o_eat/common/style/padding.dart';
 import 'package:gap_o_eat/features/customer/qr/qr_scanning_screen.dart';
 import 'package:gap_o_eat/utils/constants/sizes.dart';
 import 'package:gap_o_eat/utils/constants/texts.dart';
-// ignore: depend_on_referenced_packages
+import 'package:get/get.dart';
+
 import 'package:iconsax/iconsax.dart';
-// ignore: depend_on_referenced_packages
+
 import 'package:qr_flutter/qr_flutter.dart';
 
 class QrDisplayScreen extends StatelessWidget {
   const QrDisplayScreen({super.key});
 
-  get Get => null;
+ get getController => null;
+
 
   @override
   Widget build(BuildContext context) {
