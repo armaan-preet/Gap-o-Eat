@@ -28,7 +28,7 @@ class CustomerSignup extends StatelessWidget {
              ///-----FORM
              sign_up(),
              ///---DIVIDER
-             UformDivider(title: UTexts.orSignInWith,  ),
+             UformDivider(title: UTexts.orSignInWith,dark: false ),
              SizedBox(height: USizes.spaceBtwSections),
 
              ///---footer

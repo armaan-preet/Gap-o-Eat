@@ -3,6 +3,23 @@ class UTexts{
 
   static const String currency = '\$';
 
+  // QR Code Display Screen
+  static const String qrDisplayTitle = 'Skip the Wait — Scan to Satisfy!';
+  static const String qrDisplaySubTitle = 'Scan the QR to Explore the Menu.';
+  static const String qrScanButton = 'SCAN';
+  static const String scan = 'SCAN';
+
+  // QR Code Scanning Screen
+  static const String qrScanningTitle = 'Waiting for QR';
+  static const String qrScanSuccess = 'QR Scan Successful!';
+  static const String scanAgain = 'Scan Again';
+  static const String proceed = 'Proceed';
+  static const String camera = 'Camera';
+  static const String gallery = 'Gallery';
+
+
+
+
   static const String onBoardingTitle1 = 'Welcome to UP Store';
   static const String onBoardingTitle2 = 'Shop Everything You Love!';
   static const String onBoardingTitle3 = 'Fast & Reliable Delivery!';

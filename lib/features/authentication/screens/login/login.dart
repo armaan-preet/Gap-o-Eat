@@ -31,7 +31,7 @@ class LoginScreen extends StatelessWidget {
             SizedBox(height: USizes.spaceBtwSections),
 
             ///divider
-            UformDivider(title:UTexts.orSignInWith),
+            UformDivider(title:UTexts.orSignInWith, dark: false),
             SizedBox(height: USizes.spaceBtwSections),
 
             ///footer

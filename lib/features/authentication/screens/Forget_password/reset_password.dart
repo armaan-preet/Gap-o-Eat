@@ -36,7 +36,7 @@ class ResetPasswordScreen extends StatelessWidget {
                     SizedBox(height: USizes.spaceBtwItems),
 
                     /// Email
-                    Text(@gmail.com,style: Theme.of(context).textTheme.bodyMedium),
+                    Text('abc@gmail.com',style: Theme.of(context).textTheme.bodyMedium),
                     SizedBox(height: USizes.spaceBtwItems),
 
 
