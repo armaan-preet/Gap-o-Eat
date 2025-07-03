@@ -12,5 +12,6 @@
     "editor.rulers": [80],
     "files.associations": {
         "*.dart": "dart"
-    }
+    },
+    "java.configuration.updateBuildConfiguration": "interactive"
 }
